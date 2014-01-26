@@ -5,7 +5,7 @@
 
 (defun faq-url ()
   """ Display the FAQ URL"""
-  (ineractive)
+  (interactive)
   (insert "<http://faq.rippleunion.com>"))
 
 (defun request-trust (amount)
