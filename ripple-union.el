@@ -1,7 +1,7 @@
 (defun trust-url (amount)
   """Dispay the Trust URL"""
   (interactive "nAmount: ")
-  (insert (format "\n\n<https://ripple.com//trust?to=r3ADD8kXSUKHd6zTCKfnKT3zV9EZHjzp1S&name=Ripple%%20Union&amount=%d/CAD>" amount)))
+  (insert (format "<https://ripple.com//trust?to=r3ADD8kXSUKHd6zTCKfnKT3zV9EZHjzp1S&name=Ripple%%20Union&amount=%d/CAD>" amount)))
 
 (defun faq-url ()
   """ Display the FAQ URL"""
@@ -13,6 +13,7 @@
   (interactive "nAmount: ")
   (insert (format "We have activated your account, but before we can complete your transaction, you will need to set up a trust line with r3ADD8kXSUKHd6zTCKfnKT3zV9EZHjzp1S for at least %d CAD.  You can do this by following the link below:" amount))
   (fill-paragraph)
+  (insert "\n\n")
   (trust-url amount)
   (insert "\n\nIf you prefer to do this manually, see ")
   (faq-url)
