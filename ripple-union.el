@@ -24,6 +24,12 @@
   (faq-url)
   (insert " for directions.")
   (fill-paragraph)
+  (insert "\n\nIt is important to note that we have only sent you enough XRP to set up the trust line with us, as well as one other trust line or trade request.  You may wish to use the Ripple system to purchase more XRP before doing anything else.")
+  (fill-paragraph)
+  (insert "\n\nSee our FAQ at ")
+  (gc-url)
+  (insert " for details on how to do currency trading within the Ripple system.")
+  (fill-paragraph)
   (insert "\n"))
 
 (defun thanks ()
