@@ -6,12 +6,12 @@
 (defun faq-url ()
   """ Display the FAQ URL"""
   (interactive)
-  (insert "<http://faq.rippleunion.com>"))
+  (insert "<https://faq.rippleunion.com>"))
 
 (defun gc-url ()
   """Display the Gift Card URL"""
   (interactive)
-  (insert "<http://giftcards.rippleunion.com>"))
+  (insert "<https://giftcards.rippleunion.com>"))
 
 (defun request-trust (amount)
   """Request a Trust Line"""
