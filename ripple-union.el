@@ -20,6 +20,8 @@
   (fill-paragraph)
   (insert "\n\n")
   (trust-url amount)
+  (insert "\n\nPlease be certain to open this trust line in Canadian dollars (CAD), as we operate strictly in Canadian dollars, and will be unable to process your transaction in any other currency.")
+  (fill-paragraph)
   (insert "\n\nIf you prefer to do this manually, see ")
   (faq-url)
   (insert " for directions.")
