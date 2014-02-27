@@ -13,6 +13,11 @@
   (interactive)
   (insert "<https://giftcards.rippleunion.com>"))
 
+(defun etransfer-url()
+  """Display the E-Tansfer URL"""
+  (interactive)
+  (insert "<https://etransfer.rippleunion.com>"))
+
 (defun request-trust (amount)
   """Request a Trust Line"""
   (interactive "nAmount: ")
