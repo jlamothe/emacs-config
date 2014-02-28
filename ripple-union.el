@@ -44,3 +44,18 @@
   (interactive)
   (insert "Your transaction has been completed.\n\n")
   (insert "Thanks for choosing Ripple Union.\n"))
+
+(defun gc-value ()
+  """Request the Value of a Claim Code"""
+  (interactive)
+  (insert "Thanks for your interest in Ripple Union.\n\n")
+  (insert "Due to a recent change in our gift card policy, we are no longer accepting claim codes without knowing their value in advance.  What is the value of this claim code in Canadian dollars?")
+  (fill-paragraph)
+  (insert "\n\nAlso, please note that the information on Ripple Labs' website is out of date.  We are no longer accepting claim codes with a value greater than 10 CAD.  If we are unable to accept your claim code, you should be able to get a refund from Amazon, since we have not redeemed it.")
+  (fill-paragraph)
+  (insert "\n\nWe apologize for any inconvenience.\n\n")
+  (insert "You can view the full details of our gift card program on our website at ")
+  (gc-url)
+  (insert ".")
+  (fill-paragraph)
+  (insert "\n"))
