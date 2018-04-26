@@ -1,5 +1,3 @@
-(load-file "~/.emacs.d/ripple-union.el")
-
 (setq-default c-default-style "linux"
               c-basic-offset 4
               indent-tabs-mode nil
