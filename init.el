@@ -5,9 +5,7 @@
 
 (global-set-key (kbd "TAB") 'self-insert-command)
 
-(require 'cc-mode)
-(add-to-list 'c-mode-common-hook
-  (lambda () (setq c-syntactic-indentation nil)))
+(when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
 
 (defun set-tab-width (width)
   """sets the tab width"""
